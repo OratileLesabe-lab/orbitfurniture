@@ -103,3 +103,24 @@ button {
     text-align: center;
     clear: both;
   }
+  
+  header nav a:hover {
+    color: brown;
+  }
+
+  header nav a:active {
+    color: grey;
+  }
+
+  button:hover {
+    background-color: #444;
+  }
+
+  button:focus {
+    outline: solid;
+    box-shadow: 4px 4px 8px gray;
+  }
+
+  button:active {
+    background-color: #555;
+  }
