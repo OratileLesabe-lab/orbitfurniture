@@ -124,3 +124,44 @@ button {
   button:active {
     background-color: #555;
   }
+
+  /* Desktop */
+@media (min-width: 1200px) {
+  /* styles for desktop */
+}
+
+/* Laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* styles for laptop */
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* styles for tablet */
+}
+
+/* Mobile */
+@media (min-width: 480px) and (max-width: 767px) {
+  /* styles for mobile */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  width: 30%; /* for larger screens */
+  margin: 10px;
+  background-color: gray;
+  padding: 20px;
+  border: 1px solid gray;
+}
+
+/* Switch to single-column layout on smaller screens */
+@media (max-width: 768px) {
+  .column {
+    width: 100%; /* for smaller screens */
+  }
+}
