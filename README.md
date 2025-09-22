@@ -70,3 +70,14 @@ Files
 
 *`index.html`: The main HTML file for the website.
 *`style.css`: The CSS file that contains the styles for the website.
+
+Inspiration
+Furniture company websites:
+o	Cielo: https://www.cielo.co.za/?srsltid=AfmBOoo7up0yCPbKOFY3dH7H_hav-2H6D2sIVr0yHzkEFZxOXEC9ftEF
+o	Homzy: https://homzy.co.za/?srsltid=AfmBOorNpip3xRQrOTM1EbKAtAkcGtwYZzlo7qZGcs6RlXAg_-qyp_32
+
+Technical resources
+HTML, CSS
+o	Visual Studio Code: https://code.visualstudio.com/ 
+o	W3Schools: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit 
+o	GitHub Repositories: OratileLesabe-lab/orbitfurniture: The website project is for a furniture 
