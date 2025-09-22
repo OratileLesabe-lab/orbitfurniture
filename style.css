@@ -48,7 +48,7 @@ button {
     border-radius: 5px;
     padding: 5px;
     font-size: 1rem;
-    cursor: crosshair;
+    cursor: hand pointer;
   }
 
   button:hover {
@@ -122,8 +122,8 @@ body {
 
 /* Header styles */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: darkgoldenrod;
+  color: dark floralwhite;
   padding: 1em; /* 16px */
   text-align: center;
 }
@@ -251,7 +251,7 @@ nav li {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: value;
 }
 
 .column {
@@ -266,5 +266,52 @@ nav li {
 @media (max-width: 768px) {
   .column {
     width: 100%; /* for smaller screens */
+  }
+}
+
+/* Set root font size */
+:root {
+  font-size: 16px;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 5px;
+  padding: 10px;
+}
+
+/* Header styles */
+header {
+  background-color: grey;
+  color: grey;
+  padding: 1em; /* 16px */
+  text-align: center;
+}
+
+/* Container styles */
+.container {
+  width: 80%; /* 80% of parent element */
+  margin: 2rem auto; /* 32px auto */
+  padding: 1em; /* 16px */
+  background-color: goldenrod;
+  border: 1px solid burlywood;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.button {
+  padding: 1em 2em; /* 16px 32px */
+  background-color: grey;
+  color: grey;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* 100% of parent element */
   }
 }
