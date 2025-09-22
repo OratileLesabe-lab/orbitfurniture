@@ -18,15 +18,17 @@ body {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-    margin-bottom: 0.5px;
+    margin-bottom: 10px;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 30px;
+    color: darkred;
 }
 
 h2 {
-    font-size: 10px;
+    font-size: 20px;
+    color: darkgreen;
 }
 
 /* Links */
