@@ -45,7 +45,7 @@ button {
     background-color: var(--primary-color);
     color:brown;
     border: rosybrown;
-    /* border-radius: 5px; animation: round */
+    border-radius: 5px;
     padding: 5px;
     font-size: 1rem;
     cursor: crosshair;
@@ -80,3 +80,26 @@ button {
     justify-content: value;
   }
   
+  header nav ul li {
+    margin-right: 20px;
+  }
+
+  header nav a {
+    color: darkolivegreen;
+    text-decoration: value;
+  }
+
+  main {
+    display: flexbox;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
