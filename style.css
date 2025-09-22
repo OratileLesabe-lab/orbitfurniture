@@ -98,7 +98,7 @@ button {
 
   footer {
     background-color: #333;
-    color: #fff;
+    color: grey;
     padding: 10px;
     text-align: center;
     clear: both;
@@ -108,12 +108,67 @@ button {
     color: brown;
   }
 
+  /* Global styles */
+:root {
+  --font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem; /* 16px */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em; /* 16px */
+  text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: circle;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: value;
+}
+
+nav li {
+  margin-right: 2rem; /* 32px */
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: value;
+}
+
+.column {
+  width: 50%; /* relative to parent element */
+  margin: 1em; /* 16px */
+  font-size: 1rem; /* 16px */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .column {
+    width: 100%; /* relative to parent element */
+    margin: 0.5em; /* 8px */
+    font-size: 0.9rem; /* 14.4px */
+  }
+}
+
   header nav a:active {
     color: grey;
   }
 
   button:hover {
-    background-color: #444;
+    background-color: burlywood;
   }
 
   button:focus {
@@ -122,22 +177,70 @@ button {
   }
 
   button:active {
-    background-color: #555;
+    background-color: grey;
   }
 
   /* Desktop */
 @media (min-width: 1200px) {
-  /* styles for desktop */
+  /* styles for desktop */ .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: value;
+  }
+  .column {
+    width: 30%;
+    margin: 10px;
+    font-size: 18px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: value;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+
 }
 
 /* Laptop */
 @media (min-width: 992px) and (max-width: 1199px) {
   /* styles for laptop */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: value;
+  }
+  .column {
+    width: 20%;
+    margin: 5px;
+    font-size: 7px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: value;
+  }
+  nav li {
+    margin-right: 15px;
+  }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
   /* styles for tablet */
+  .content {
+    display: block;
+  }
+  .column {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  nav ul {
+    display: block;
+  }
+  nav li {
+    margin-bottom: 10px;
+  }
 }
 
 /* Mobile */
@@ -154,9 +257,9 @@ button {
 .column {
   width: 30%; /* for larger screens */
   margin: 10px;
-  background-color: gray;
+  background-color: grey;
   padding: 20px;
-  border: 1px solid gray;
+  border: 1px solid grey;
 }
 
 /* Switch to single-column layout on smaller screens */
