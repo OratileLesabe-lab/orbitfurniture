@@ -1,5 +1,77 @@
 # orbitfurniture
 
+Homepage Wireframe
+•	Header
+o	Business Name
+o	Navigation Menu (About, Products, Testimonials, Contact)
+•	Hero Section
+o	High-quality image of furniture
+o	Headline (“Transform your space")
+•	Featured Products
+o	Section title (e.g., "Featured Furniture")
+o	Product carousel or grid with images, descriptions, and prices
+•	Call-to-Action
+o	Button (e.g., "Explore Our Collection")
+•	Footer
+o	Contact information (address, phone number, email)
+o	Social media links
+About Us Page Wireframe
+•	Header
+o	Logo
+o	Navigation Menu (About, Products, Testimonials, Contact)
+•	Hero Section
+o	High-quality image related to the company's story
+o	Headline (e.g., "Our Story")
+•	Company History
+o	Brief paragraph about the company's history and mission
+•	Team Section
+o	Photos and brief bios of team members
+•	Values and Mission
+o	Section highlighting the company's values and mission
+•	Call-to-Action
+o	Button (e.g., "Join Our Team" or "Learn More")
+•	Footer
+o	Same as homepage
+Our Products Page Wireframe
+•	Header
+o	Logo
+o	Navigation Menu (About Us, Our Products, Testimonials, Contact Us)
+•	Product Grid
+o	Grid of products with images, descriptions, and prices
+o	Filtering and sorting options (e.g., by category, price)
+•	Product Details
+o	Modal or page with detailed product information
+•	Call-to-Action
+o	Button ("Learn more")
+•	Footer
+o	Same as homepage
+Testimonials Page Wireframe
+•	Header
+o	Navigation Menu (About, Products, Testimonials, Contact)
+•	Testimonial Grid
+o	Grid of testimonials with images, quotes, and ratings
+•	Testimonial Details
+o	Modal or page with detailed testimonial information
+•	Call-to-Action
+o	Button ("Share Your Story")
+•	Footer
+o	Same as homepage
+Contact Us Page Wireframe
+•	Header
+o	Logo
+o	Navigation Menu (About, Products, Testimonials, Contact)
+•	Contact Form
+o	Form with fields for name, email, phone number, and message
+•	Contact Information
+o	Address, phone number, email, and social media links
+•	Map
+o	Google Map or other map integration
+•	Call-to-Action
+o	Button ("Get in Touch")
+•	Footer
+o	Same as homepage
+
+
 PART 1
 
 The website project is for a furniture business called Orbit Furniture.
