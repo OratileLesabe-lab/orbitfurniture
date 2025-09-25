@@ -330,4 +330,7 @@ header {
   background-color: #2980b9;
 }
 
-<h1 class="Transform Your Space with Unique Furniture!">This text will be italicized</h1>
+.center-/img {
+  display: block;
+  margin: 0 auto;
+}
