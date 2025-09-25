@@ -22,11 +22,22 @@
         <h2>Savings and Promotions  
             Summer Clearance: Enjoy up to 20% off on select furniture</h2>
 
+            <div class="filter-options">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                  <option value="all">All</option>
+                  <option value="Slaybed">Slaybed</option>
+                  <option value="Pedestals">Pedestals</option>
+                  <option value="Headboard">Headboard</option>
+                </select>
+              
+
             <h2>Explore Our Newest Arrivals: Stylish Designs for Your Living Space</h2>
         <div class="Product-grid">
             <div>
                 <img src="img/Product1.jpg" alt="Product 1" width="200" height="200">
                 <h3>Our Classy Pedestals</h3>
+                <div class="product" data-category="Pedestals">
                 <p>R2500</p>
                 <button id="pedestal-description-btn">Learn More About Our Pedestal</button>
                 <div id="pedestal-description" style="display: none;">
@@ -43,6 +54,7 @@
             <div class="Product-grid">
                 <img src="img/Product2.jpg" alt="Product 2" width="200" height="200">
                 <h3>Our Luna Headboards</h3>
+                <div class="product" data-category="Headboards">
                 <p>R5000</p>
                 <button id="headboard-description-btn">Learn More About Our Headboard</button>
                 <div id="headboard-description" style="display: none;">
@@ -59,6 +71,7 @@
             <div class="Product-grid">
                 <img src="img/Product3.jpg" alt="Product 3" width="200" height="200">
                 <h3>Our Oasis Slaybeds</h3>
+                <div class="product" data-category="Slaybeds">
                 <p>R12000</p>
                 <button id="daybed-description-btn">Learn More About Our Daybed</button>
                 <div id="daybed-description" style="display: none;">

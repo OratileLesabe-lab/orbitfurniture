@@ -317,3 +317,15 @@ header {
     width: 100%; /* 100% of parent element */
   }
 }
+.share-story-btn {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.share-story-btn:hover {
+  background-color: #2980b9;
+}
