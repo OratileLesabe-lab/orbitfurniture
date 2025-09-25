@@ -13,11 +13,10 @@ o	Product carousel or grid with images, descriptions, and prices
 •	Call-to-Action
 o	Button (e.g., "Explore Our Collection")
 •	Footer
-o	Contact information (address, phone number, email)
-o	Social media links
+o	Copywrite information
+
 About Us Page Wireframe
 •	Header
-o	Logo
 o	Navigation Menu (About, Products, Testimonials, Contact)
 •	Hero Section
 o	High-quality image related to the company's story
