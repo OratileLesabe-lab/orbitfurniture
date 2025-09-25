@@ -113,9 +113,21 @@ This project is not meant for commercial usage; it is solely for educational rea
 Independent Institution of Education guidelines
 
 PART 2
+
+Improvement of Part 1
+
+*Enhanced product descriptions: Offer additional details regarding products, including their features, advantages, and specifications.
+*Incorporated high-resolution images: Feature the showroom on the homepage.
+*Incorporated distinct calls-to-action: featured unmistakable calls-to-action (CTAs) across the website to motivate visitors to proceed to the next step.
+*Incoporated Links to the social media pages.
+*Added " Share Your Story" button, on the testimonial page.
+*Added a search engine to "Our Products" page.
+Section added "Our Approach to Design"
+
 Overview
 
 This initiative involves a responsive website that adjusts to various screen dimensions. It employs relative units and media queries to establish a layout that functions effectively across different devices.
+
 Features
 
 *Responsive design that adapts to different screen sizes
