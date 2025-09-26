@@ -154,6 +154,16 @@ Files
 *`index.html`: The main HTML file for the website.
 *`style.css`: The CSS file that contains the styles for the website.
 
+Screenshots*
+![Screenshots for Orbit Website to different screen sizes]
+![image_alt](https://github.com/OratileLesabe-lab/orbitfurniture/blob/main/Desktop1.PNG?raw=true)
+[image_alt](https://github.com/OratileLesabe-lab/orbitfurniture/blob/main/Desktop2.PNG?raw=true)
+[image_alt](https://github.com/OratileLesabe-lab/orbitfurniture/blob/main/Tablet1.jpg?raw=true)
+[image_alt](https://github.com/OratileLesabe-lab/orbitfurniture/blob/main/Tablet4.jpg?raw=true)
+[image_alt](https://raw.githubusercontent.com/OratileLesabe-lab/orbitfurniture/refs/heads/main/cellphone1.jfif)
+[image_alt](https://raw.githubusercontent.com/OratileLesabe-lab/orbitfurniture/refs/heads/main/cellphone2.jfif)
+
+
 Inspiration
 Furniture company websites:
 o	Cielo: https://www.cielo.co.za/?srsltid=AfmBOoo7up0yCPbKOFY3dH7H_hav-2H6D2sIVr0yHzkEFZxOXEC9ftEF
