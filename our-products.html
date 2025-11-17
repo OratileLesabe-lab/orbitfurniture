@@ -21,105 +21,36 @@
         <p>Free deliveries on ALL orders in Gauteng</p>
         <h2>Savings and Promotions  
             Summer Clearance: Enjoy up to 20% off on select furniture</h2>
-          <div class="tabs">
-    <div class="tab active" data-target="living">Living Room</div>
-    <div class="tab" data-target="bedroom">Bedroom</div>
-    <div class="tab" data-target="office">Office</div>
-</div>
-<div id="living" class="tab-content active">
-    <div class="product">
-        <h2>Luxury Sofa</h2>
-        <button class="accordion">Product Details</button>
-        <div class="panel">
-            <p>Comfortable 3-seater sofa with premium fabric.</p>
-        </div>
-        <button class="viewBtn">Quick View</button>
-    </div>
-</div>
-<div id="bedroom" class="tab-content">
-    <div class="product">
-        <h2>Queen Bed Frame</h2>
-        <button class="accordion">Product Details</button>
-        <div class="panel">
-            <p>Elegant wooden bed frame with modern design.</p>
-        </div>
-        <button class="viewBtn">Quick View</button>
-    </div>
-</div>
-<div id="office" class="tab-content">
-    <div class="product">
-        <h2>Office Desk</h2>
-        <button class="accordion">Product Details</button>
-        <div class="panel">
-            <p>Spacious work desk with drawers for storage.</p>
-        </div>
-        <button class="viewBtn">Quick View</button>
-    </div>
-</div>
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h3>Product Preview</h3>
-        <p>This is a quick view of the selected product.</p>
-    </div>
+    <h2>Our Furniture Categories</h2>
+
+<div class="tabs">
+  <button class="tab-btn" onclick="openTab('pedestals')">Pedestals</button>
+  <button class="tab-btn" onclick="openTab('headboards')">Headboards</button>
+  <button class="tab-btn" onclick="openTab('slaybeds')">Slaybeds</button>
 </div>
 
-<script>
+<div id="pedestals" class="tab-content">
+  <p>High–quality and comfortable pedestals.</p>
+</div>
 
-   const tabs = document.querySelectorAll(".tab");
-    const contents = document.querySelectorAll(".tab-content");
+<div id="headboards" class="tab-content" style="display:none;">
+  <p>Modern heaboards with premium materials.</p>
+</div>
 
-    tabs.forEach(tab => {
-        tab.addEventListener("click", () => {
-            tabs.forEach(t => t.classList.remove("active"));
-            contents.forEach(c => c.classList.remove("active"));
-
-            tab.classList.add("active");
-            document.getElementById(tab.dataset.target).classList.add("active");
-            });
-    });
-    const accordions = document.querySelectorAll(".accordion");
-
-    accordions.forEach(acc => {
-        acc.addEventListener("click", function() {
-            this.classList.toggle("active");
-            let panel = this.nextElementSibling;
-            panel.style.display = panel.style.display === "block" ? "none" : "block";
-        });
-    });
-
-    const modal = document.getElementById("myModal");
-    const closeBtn = document.querySelector(".close");
-    const viewButtons = document.querySelectorAll(".viewBtn");
-
-    viewButtons.forEach(btn => {
-        btn.addEventListener("click", () => {
-            modal.style.display = "flex";
-        });
-    });
-    closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
-
-    window.addEventListener("click", e => {
-        if (e.target === modal) modal.style.display = "none";
-    });
+<div id="slaybeds" class="tab-content" style="display:none;">
+  <p>Durable dining and slaybeds.</p>
+  
+ <script>
+  function openTab(tabName) {
+    const tabs = document.querySelectorAll(".tab-content");
+    tabs.forEach((tab) => (tab.style.display = "none"));
+    document.getElementById(tabName).style.display = "block";
+  }
 </script>
-
 </body>
 </html>
-</script>
-  
-            <div class="filter-options">
-                <label for="category">Category:</label>
-                <select id="category" name="category">
-                  <option value="all">All</option>
-                  <option value="Slaybeds">Slaybeds</option>
-                  <option value="Pedestals">Pedestals</option>
-                  <option value="Headboards">Headboards</option>
-                </select>
-              
-
+    
+</div> 
             <h2>Explore Our Newest Arrivals: Stylish Designs for Your Living Space</h2>
         <div class="Product-grid">
             <div>
@@ -171,6 +102,25 @@
                     <li>Colors: Available in various colors and fabrics</li>
                   </ul>
                 </div>
+                <button id="openModal">View Special Offer</button>
+                <div id="modal" class="modal">
+                 <div class="modal-content">
+                     <span id="closeModal">&times;</span>
+                     <h2>Orbit Furniture Special</h2>
+                     <p>Get 10% off on all slaybeds this month!</p>
+                </div>
+            </div>
+            <script>
+                const modal = document.getElementById("modal");
+const openBtn = document.getElementById("openModal");
+const closeBtn = document.getElementById("closeModal");
+
+openBtn.onclick = () => modal.style.display = "block";
+closeBtn.onclick = () => modal.style.display = "none";
+window.onclick = (e) => {
+  if (e.target === modal) modal.style.display = "none";
+};
+            </script>
                 
         </section>
     </main>
