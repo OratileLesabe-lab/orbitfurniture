@@ -33,10 +33,35 @@
                     <p>- Tlhopo L</p>
                     <P>Ratings: 5/5 stars</P>
             </div>
+            <h2>Frequently Asked Questions</h2>
+
+<div class="accordion">
+  <button class="accordion-btn">Do you offer delivery?</button>
+  <div class="accordion-content">
+    <p>Yes! Orbit Furniture offers delivery nationwide.</p>
+  </div>
+
+  <button class="accordion-btn">Can I customize furniture?</button>
+  <div class="accordion-content">
+    <p>Yes, we offer customization on selected items.</p>
+  </div>
+</div>
+<script>
+    const buttons = document.querySelectorAll(".accordion-btn");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+    content.style.display =
+      content.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
     </html>
     <section>
-        <section class="Share Your story">
-            <a href="mailto:info@orbitfurniture.com?subject=Share%20Your%20Story" class="share-story-btn">Share Your Story</a>
+       <button class="share-btn">
+  <a href="[mailto:info@orbitfurniture.com?subject=Share%20Your%20Story]" target="_blank">Share Your Story</a>
+</button>
     </section>
                 
         

@@ -2,6 +2,93 @@
 <html></html>
 <head>
     <title>Our Products | Orbit Furniture</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f9f9f9;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background: #555;
+  }
+
+  /* Toggle product boxes with slide/fade animation */
+  .toggle-box {
+    background: #f0f0f0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+  }
+
+  .toggle-box.active {
+    max-height: 1000px; /* large enough for content */
+    opacity: 1;
+    padding: 15px;
+  }
+
+  /* Modal styling with fade */
+  .modal {
+    display: none;
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.7);
+    z-index:1000;
+    opacity:0;
+    transition: opacity 0.4s ease;
+  }
+
+  .modal.show {
+    display: block;
+    opacity:1;
+  }
+
+  .modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    transform: translateY(-50px);
+    transition: transform 0.4s ease;
+  }
+
+  .modal.show .modal-content {
+    transform: translateY(0);
+  }
+
+  #closeModal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +107,24 @@
         <h1>Our Products</h1>
         <p>Free deliveries on ALL orders in Gauteng</p>
         <h2>Savings and Promotions  
-            Summer Clearance: Enjoy up to 20% off on select furniture</h2>
+           </div>
+                <button id="openModal">View Special Offer</button>
+                <div id="modal" class="modal">
+                 <div class="modal-content">
+                     <span id="closeModal">&times;</span>
+                     <h2>Orbit Furniture Special</h2>
+                     <p>Get 10% off on all slaybeds this month!</p>
+                </div>
+            </div>
+            <script>
+const modal = document.getElementById("modal");
+const openBtn = document.getElementById("openModal");
+const closeBtn = document.getElementById("closeModal");
+
+openBtn.onclick = () => modal.style.display = "block";
+closeBtn.onclick = () => modal.style.display = "none";
+window.onclick = (e) => { if(e.target === modal) modal.style.display = "none"; }
+</script>
     <h2>Our Furniture Categories</h2>
 
 <div class="tabs">
@@ -55,76 +159,101 @@
         <div class="Product-grid">
             <div>
                 <img src="img/Product1.jpg" alt="Product 1" width="200" height="200">
-                <h3>Our Classy Pedestals</h3>
+                <h2>Our Classy Pedestals</h2>
                 <div class="product" data-category="Pedestals">
                 <p>R2500</p>
-                <button id="pedestal-description-btn">Learn More About Our Pedestal</button>
-                <div id="pedestal-description" style="display: none;">
-                  <h2>Pedestal Description</h2>
-                  <p>Our pedestal is crafted to highlight and present your beloved decorative items. Featuring a robust base and an elegant design, it’s ideal for exhibiting vases, sculptures, or other decorative pieces.</p>
-                  <ul>
-                    <li>Dimensions: 12" x 12" x 24"</li>
-                    <li>Materials: Solid wood or metal</li>
-                    <li>Finish: Available in various finishes, including wood stain or painted</li>
-                  </ul>
-                </div>
-                
-            </div>
+<button class="toggle-btn" data-target="pedestals-description">Learn More About Pedestals</button>
+<div id="pedestals-description" class="toggle-box" style="display:none;">
+  <h2>Pedestals</h2>
+  <p>Our pedestals are built to provide reliable storage for your bedroom or office. Each pedestal is expertly crafted for durability and style.</p>
+  <ul>
+    <li>Available Types: 2-drawer, 3-drawer, and sliding pedestal</li>
+    <li>Materials: Solid wood or melamine board</li>
+    <li>Features: Smooth drawer runners, secure handles, scratch-resistant finish</li>
+    <li>Colors: White, Oak, Mahogany, Espresso</li>
+  </ul>
+</div>   
+</div>
+        </div>
             <div class="Product-grid">
                 <img src="img/Product2.jpg" alt="Product 2" width="200" height="200">
-                <h3>Our Luna Headboards</h3>
-                <div class="product" data-category="Headboards">
-                <p>R5000</p>
-                <button id="headboard-description-btn">Learn More About Our Headboard</button>
-                <div id="headboard-description" style="display: none;">
-                  <h2>Headboard Description</h2>
-                  <p> Our headboard is crafted to bring an element of elegance and refinement to any bedroom. Featuring a robust frame and chic design, it's ideal for establishing a warm and welcoming ambiance.</p>
-                  <ul>
-                    <li>Dimensions: Available in various sizes to fit different bed frames</li>
-                    <li>Materials: Solid wood, metal, or upholstered</li>
-                    <li>Style: Available in various styles, including modern, traditional, and rustic</li>
-                  </ul>
-                </div>
-                
-            </div>
+                <h3>Our Elegant Headboards</h3>
+                <div class="product" data-category="headboards">
+                <p>R4500</p>
+                <button class="toggle-btn" data-target="headboard-description">Learn More About Headboard</button>
+<div id="headboard-description" class="toggle-box">
+  <h2>Headboard</h2>
+  <p>The Orbit Headboard range is crafted to bring elegance and comfort to your bedroom. Available in multiple sizes and designs.</p>
+  <ul>
+    <li>Sizes: Single, ¾, Double, Queen, King</li>
+    <li>Materials: Upholstered wood frame, premium fabric or faux leather</li>
+    <li>Features: Padded support, modern stitching patterns, long-lasting construction</li>
+    <li>Colors: Cream, Slate Grey, Chocolate Brown, Black</li>
+  </ul>
+</div>
             <div class="Product-grid">
                 <img src="img/Product3.jpg" alt="Product 3" width="200" height="200">
                 <h3>Our Oasis Slaybeds</h3>
-                <div class="product" data-category="Slaybeds">
-                <p>R12000</p>
-                <button id="daybed-description-btn">Learn More About Our Daybed</button>
-                <div id="daybed-description" style="display: none;">
-                  <h2>Daybed Description</h2>
-                  <p>Our daybed is crafted for ease and tranquility, making it ideal for lounging, reading, or enjoying a nap. Featuring a robust frame and soft cushions, it serves as a wonderful enhancement to any space.</p>
-                  <ul>
-                    <li>Dimensions: 80" x 40" x 30"</li>
-                    <li>Materials: Solid wood frame, high-density foam cushions</li>
-                    <li>Colors: Available in various colors and fabrics</li>
-                  </ul>
-                </div>
-                <button id="openModal">View Special Offer</button>
-                <div id="modal" class="modal">
-                 <div class="modal-content">
-                     <span id="closeModal">&times;</span>
-                     <h2>Orbit Furniture Special</h2>
-                     <p>Get 10% off on all slaybeds this month!</p>
-                </div>
-            </div>
-            <script>
-                const modal = document.getElementById("modal");
-const openBtn = document.getElementById("openModal");
-const closeBtn = document.getElementById("closeModal");
+                <div class="product" data-category="slaybeds">
+<button class="toggle-btn" data-target="slybed-description">Learn More About Slybed</button>
+<div id="slybed-description" class="toggle-box">
+  <h2>Slybed</h2>
+  <p>The Slybed is a versatile bed base designed for convenience and functionality. It includes built-in storage and a sleek, compact structure.</p>
+  <ul>
+    <li>Dimensions: Standard single / ¾ / double sizes</li>
+    <li>Materials: High-quality wood, strong support slats</li>
+    <li>Features: Under-bed sliding drawer, stable base, modern finish</li>
+    <li>Colors: Walnut, Black, Natural Wood</li>
+  </ul>
+</div>
+ <script>
+  const buttons = document.querySelectorAll(".toggle-btn");
 
-openBtn.onclick = () => modal.style.display = "block";
-closeBtn.onclick = () => modal.style.display = "none";
-window.onclick = (e) => {
-  if (e.target === modal) modal.style.display = "none";
-};
-            </script>
-                
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const targetId = button.getAttribute("data-target");
+      const targetBox = document.getElementById(targetId);
+
+      // Toggle show/hide
+      if (targetBox.style.display === "none") {
+        targetBox.style.display = "block";
+      } else {
+        targetBox.style.display = "none";
+      }
+    });
+  });   
         </section>
     </main>
 </body>
+<script>
+  // PRODUCT TOGGLE BUTTONS
+  const toggleButtons = document.querySelectorAll(".toggle-btn");
+
+  toggleButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const targetId = button.getAttribute("data-target");
+      const targetBox = document.getElementById(targetId);
+
+      if(targetBox.style.display === "none" || targetBox.style.display === "") {
+        targetBox.style.display = "block";
+      } else {
+        targetBox.style.display = "none";
+      }
+    });
+  });
+
+  // MODAL FUNCTIONALITY
+  const modal = document.getElementById("modal");
+  const openBtn = document.getElementById("openModal");
+  const closeBtn = document.getElementById("closeModal");
+
+  openBtn.onclick = () => modal.style.display = "block";
+  closeBtn.onclick = () => modal.style.display = "none";
+
+  window.onclick = (e) => {
+    if(e.target === modal) modal.style.display = "none";
+  };
+</script>
 <footer>
     <p>&copy 2025 Orbit Furniture</p>
 </footer>
