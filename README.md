@@ -174,3 +174,24 @@ HTML, CSS
 o	Visual Studio Code: https://code.visualstudio.com/ 
 o	W3Schools: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit 
 o	GitHub Repositories: OratileLesabe-lab/orbitfurniture: The website project is for a furniture 
+
+PART 3
+
+Website Structure
+orbit-furniture/
+│
+├── index.html
+├── about-us.html
+├── our-products.html
+├── testimonials.html
+├── contact-us.html
+│
+└── assets/
+    ├── css/
+    │   └── style.css
+    ├── js/
+    │   └── script.js
+    └── images/
+        ├── slaybed.jpg
+        ├── pedestal.jpg
+        └── headboard.jpg
