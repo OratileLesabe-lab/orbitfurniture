@@ -975,3 +975,60 @@ button:hover {
 .gallery-item:hover {
   transform: scale(1.05);
 }
+product-grid,
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* responsive columns */
+  gap: 20px;
+}
+.product-card img,
+.gallery-item {
+  width: 100%;       /* fill container */
+  height: auto;      /* maintain aspect ratio */
+  object-fit: cover; /* crop if needed */
+  border-radius: 8px;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;    /* allow menu to wrap on smaller screens */
+  gap: 10px;
+}
+
+.nav-button {
+  flex: 1 1 auto;    /* buttons shrink and grow */
+  padding: 10px;
+  font-size: 16px;
+}
+/* Tablets and smaller */
+@media (max-width: 768px) {
+  .product-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  h1, h2 {
+    font-size: 1.5em; /* adjust headings */
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .product-card img,
+  .gallery-item {
+    height: 150px;
+  }
+
+  .nav-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  header, main, footer {
+    padding: 10px;
+  }
+}
