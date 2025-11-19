@@ -851,3 +851,37 @@ button:hover {
 #openModal:hover {
   background-color: #555;
 }
+/* Ad Banner Style */
+.ad-banner {
+  position: fixed;
+  bottom: -150px; /* start hidden */
+  left: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #5a2d82, #9d4edd);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: bottom 0.8s ease; /* animation */
+  z-index: 9999;
+}
+
+/* When ad becomes visible */
+.ad-banner.show {
+  bottom: 0; /* slides into view */
+}
+
+.ad-banner button {
+  background: #fff;
+  color: #000;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+.ad-banner button:hover {
+  background: #ddd;
+}

@@ -33,6 +33,24 @@
         <img src="img/furniture.jpg" width="80%" loading="lazy" alt="Orbit Furniture Showroom">
         <section class="intro">
         <p>We offer stylish, comfortable, modern,quality furniture, just for your home!</p>
+        <div id="adBanner" class="ad-banner">
+  <p>🔥 Special Offer: Get 10% OFF all Orbit Furniture beds this month! 🔥</p>
+  <button id="closeAd">Close</button>
+</div>
+<script>
+    // Show ad 2 seconds after page loads
+window.addEventListener("load", () => {
+    const ad = document.getElementById("adBanner");
+    setTimeout(() => {
+        ad.classList.add("show");
+    }, 2000);
+});
+
+// Close ad button
+document.getElementById("closeAd").addEventListener("click", () => {
+    document.getElementById("adBanner").classList.remove("show");
+});
+</script>
         <p>
   Browse our full range in the <a href="our-products.html">Our Products</a> page.
 </p>

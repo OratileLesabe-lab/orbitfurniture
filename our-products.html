@@ -65,6 +65,24 @@
           </ul>
         </div>
       </div>
+      <div id="adBanner" class="ad-banner">
+  <p>🔥 Special Offer: Get 10% OFF all Orbit Furniture beds this month! 🔥</p>
+  <button id="closeAd">Close</button>
+</div>
+<script>
+  // Show ad 2 seconds after page loads
+window.addEventListener("load", () => {
+    const ad = document.getElementById("adBanner");
+    setTimeout(() => {
+        ad.classList.add("show");
+    }, 2000);
+});
+
+// Close ad button
+document.getElementById("closeAd").addEventListener("click", () => {
+    document.getElementById("adBanner").classList.remove("show");
+});
+</script>
 
       <div class="controls">
         <input type="text" id="searchInput" placeholder="Search products...">
