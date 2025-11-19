@@ -303,7 +303,7 @@ o Toggle Buttons: Each product has a “Learn More” button to expand/collapse 
 
 o Lightbox Gallery: Product images can be viewed in a larger modal when clicked.
 
-nspiration
+Inspiration
 Furniture company websites:
 o	Cielo: https://www.cielo.co.za/?srsltid=AfmBOoo7up0yCPbKOFY3dH7H_hav-2H6D2sIVr0yHzkEFZxOXEC9ftEF
 o	Homzy: https://homzy.co.za/?srsltid=AfmBOorNpip3xRQrOTM1EbKAtAkcGtwYZzlo7qZGcs6RlXAg_-qyp_32
@@ -314,6 +314,9 @@ o	Visual Studio Code: https://code.visualstudio.com/
 o	W3Schools: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit 
 ohttps://mystudies.iie.edu.za/d2l/le/lessons/25599/topics/3544830
 o	GitHub Repositories: OratileLesabe-lab/orbitfurniture: The website project is for a furniture 
+
+Screenshots*
+![image_alt](https://github.com/OratileLesabe-lab/orbitfurniture/blob/main/Mobile%20user-friendly.jpeg)
 
 Author
 Oratile Lesabe- Diploma in Network Management Student.
