@@ -15,7 +15,7 @@
     .product-card { width:250px; background:#fafafa; padding:15px; border-radius:6px; box-shadow:0 1px 5px rgba(0,0,0,0.1); text-align:center; }
     .product-card img { width:100%; border-radius:4px; }
     button { padding:8px 12px; cursor:pointer; border:none; background:#333; color:#fff; border-radius:4px; margin-top:10px; }
-    button:hover { background:#555; }
+    button:hover { background:#131313; }
     .toggle-box { display:none; background:#e9e9e9; padding:10px; margin-top:10px; border-radius:4px; text-align:left; }
     .tabs { text-align:center; margin-top:20px; }
     .tab-btn { padding:8px 16px; margin:0 5px; cursor:pointer; background:#333; color:#fff; border:none; border-radius:4px; }
@@ -72,11 +72,6 @@
 
       <div id="products-container" class="product-grid"></div>
 
-      <div class="tabs">
-        <button class="tab-btn" data-tab="pedestals">Pedestals</button>
-        <button class="tab-btn" data-tab="headboards">Headboards</button>
-        <button class="tab-btn" data-tab="slaybeds">Slaybeds</button>
-      </div>
 
       <div id="pedestals" class="tab-content">
         <p>High–quality and comfortable pedestals.</p>
@@ -112,10 +107,10 @@
 
     // Product data
     const products = [
-      { name: 'Luxury Slaybed', price: 'R4500', category: 'slaybeds', image: 'https://via.placeholder.com/300x200?text=Slaybed', description: 'Premium slaybed for comfort.' },
-      { name: 'Classic Pedestal', price: 'R1200', category: 'pedestals', image: 'https://via.placeholder.com/300x200?text=Pedestal', description: 'Durable pedestal.' },
-      { name: 'Modern Headboard', price: 'R1800', category: 'headboards', image: 'https://via.placeholder.com/300x200?text=Headboard', description: 'Stylish headboard.' },
-      { name: 'Comfort Daybed', price: 'R3000', category: 'slaybeds', image: 'https://via.placeholder.com/300x200?text=Daybed', description: 'Perfect for relaxing.' }
+      { name: 'Luxury Slaybed', price: 'R4500', category: 'slaybeds', image: 'img/luxury-slaybed.jpg', description: 'Premium slaybed for comfort.' },
+      { name: 'Classic Pedestal', price: 'R1200', category: 'pedestals', image: 'img/classic-pedestal.jpg', description: 'Durable pedestal.' },
+      { name: 'Modern Headboard', price: 'R1800', category: 'headboards', image: 'img/modern-headboard.jpg', description: 'Stylish headboard.' },
+      { name: 'Comfort Daybed', price: 'R3000', category: 'slaybeds', image: 'img/comfort-daybed.jpg', description: 'Perfect for relaxing.' }
     ];
 
     const container = document.getElementById('products-container');
@@ -173,88 +168,6 @@
   </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html></html>
-<head>
- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Products | Orbit Furniture</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; }
-    .container { max-width:1200px; margin:auto; padding:20px; background:#fff; }
-    h1,h2 { text-align:center; }
-    .controls { text-align:center; margin:20px 0; }
-    input, select { padding:8px; margin:5px; }
-    .product-grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-    .product-card { width:250px; background:#fafafa; padding:15px; border-radius:6px; box-shadow:0 1px 5px rgba(0,0,0,0.1); text-align:center; }
-    .product-card img { width:100%; border-radius:4px; }
-    button { padding:8px 12px; cursor:pointer; border:none; background:#333; color:#fff; border-radius:4px; margin-top:10px; }
-    button:hover { background:#555; }
-    .toggle-box { display:none; background:#e9e9e9; padding:10px; margin-top:10px; border-radius:4px; text-align:left; }
-    .tabs { text-align:center; margin-top:20px; }
-    .tab-btn { padding:8px 16px; margin:0 5px; cursor:pointer; background:#333; color:#fff; border:none; border-radius:4px; }
-    .tab-btn:hover { background:#555; }
-    .tab-content { display:none; margin-top:10px; padding:10px; background:#f1f1f1; border-radius:4px; }
-    .tab-content.active { display:block; }
-    .modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); justify-content:center; align-items:center; }
-    .modal-content { background:#fff; padding:20px; width:350px; border-radius:6px; text-align:center; position:relative; }
-    .close { position:absolute; top:10px; right:15px; font-size:24px; cursor:pointer; }
-   </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><button onclick="location.href='index.html'">Home</button></li>
-        <li><button onclick="location.href='about-us.html'">About Us</button></li>
-        <li><button onclick="location.href='our-products.html'">Our Products</button></li>
-        <li><button onclick="location.href='testimonials.html'">Testimonials</button></li>
-        <li><button onclick="location.href='contact-us.html'">Contact Us</button></li>
-      </ul>
-    </nav>
-</header>
-
-<main>
-    <div class="container">
-      <h1>Our Products</h1>
-      <h2>Free deliveries on ALL orders in Gauteng</h2>
-      <h2>Savings and Promotions</h2>
-
-      <button id="openModal">View Special Offer</button>
-
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span id="closeModal" class="close">&times;</span>
-    <h2>Orbit Furniture Special</h2>
-    <p>Get 10% off on all slaybeds this month!</p>
-    <ul>
-      <li>Valid until 30 November 2025</li>
-      <li>Applies to all slaybed models</li>
-      <li>Free delivery within Gauteng</li>
-    </ul>
-</div>
-      </div>
-      <div class="controls">
-        <input type="text" id="searchInput" placeholder="Search products...">
-        <select id="sortSelect">
-          <option value="name-asc">Sort: Name (A–Z)</option>
-          <option value="name-desc">Sort: Name (Z–A)</option>
-          <option value="price-low">Sort: Price (Low → High)</option>
-          <option value="price-high">Sort: Price (High → Low)</option>
-        </select>
-      </div>
-
-      <div id="products-container" class="product-grid"></div>
-         <div class="tabs">
-        <button class="tab-btn" onclick="openTab('pedestals')">Pedestals</button>
-        <button class="tab-btn" onclick="openTab('headboards')">Headboards</button>
-        <button class="tab-btn" onclick="openTab('slaybeds')">Slaybeds</button>
-      </div>
-      <div id="pedestals" class="tab-content"></div>
-      <div id="headboards" class="tab-content"></div>
-      <div id="slaybeds" class="tab-content"></div>
-    </div>
   </main>
   
   <script>

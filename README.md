@@ -185,6 +185,7 @@ orbit-furniture/
 ├── our-products.html
 ├── testimonials.html
 ├── contact-us.html
+├── enquiry.html
 │
 └── assets/
     ├── css/
@@ -195,3 +196,108 @@ orbit-furniture/
         ├── slaybed.jpg
         ├── pedestal.jpg
         └── headboard.jpg
+        └── headboard.jpg
+        └── headboard.jpg
+        └── headboard.jpg
+
+Orbit Furniture is an interactive and user-friendly website that displays a wide range of furniture items, such as daybeds, slaybeds, headboards, and pedestals. The site aims to deliver an engaging experience for users through dynamic product listings, functionalities for searching and sorting, modals for special promotions, and interactive tabs for different product categories.
+
+This project was developed for a web development assignment and showcases the application of HTML, CSS, and JavaScript in creating a modern and functional website.
+
+Orbit Furniture features a dynamic and engaging website that includes a Home page (index.html): An overview of Orbit Furniture along with highlighted products.
+
+About Us (about-us.html): Details about the company’s background, purpose, and core values.
+
+Our Products (our-products.html): A comprehensive catalog of items offering interactive tabs, search functionality, sorting options, and modal popups for special promotions.
+
+Testimonials (testimonials.html): Feedback and reviews from customers.
+
+Contact Us (contact-us.html): A contact form designed for general inquiries and customer support.
+
+Enquiry (enquiry.html): A dedicated form for questions specifically about products. Users can ask about product availability, pricing, and other details. This form incorporates HTML5 and JavaScript validation and can dynamically display a response with relevant information.
+
+Updates on the Website
+
+o Enquiry.html page added
+
+o Colour shade changed to a greyish shade 
+
+o Responsive Navigation
+
+o Navigation buttons allow users to move between pages (Home, About Us, Our Products, Testimonials, Contact Us).
+
+o Buttons are styled and easy to interact with.
+
+oModal Popup (Special Offer)
+
+o Clicking “View Special Offer” opens a popup modal with information about promotions.
+
+o Modal can be closed by clicking the X or outside the modal area.
+
+o Uses JavaScript for dynamic opening/closing.
+
+o Product Categories (Tabs)
+
+o “Our Products” page has tabs for Pedestals, Headboards, Slaybeds.
+
+o Clicking a tab dynamically shows/hides the relevant product category.
+
+o Product Toggle Sections (Learn More)
+
+o Each product has a “Learn More” button that toggles a section with additional details about the product.
+
+o Users can expand/collapse descriptions without leaving the page.
+
+o Dynamic Product Listing
+
+o Products are displayed dynamically using JavaScript arrays.
+
+o Each product includes name, price, description, and an image.
+
+o Search Functionality
+
+o Users can search for products by name or description.
+
+o Search is case-insensitive and updates the product grid in real-time.
+
+o Sort Functionality
+
+o Users can sort products by:
+
+o Name (A–Z or Z–A)
+
+o Price (Low → High or High → Low)
+
+o Sorting works dynamically along with the search filter.
+
+o Form Validation
+
+o Both Contact Us and Enquiry forms use HTML5 and JavaScript validation.
+
+oEnsures required fields are filled and email format is correct.
+
+o SEO Optimizations
+
+Proper meta tags (title, description) for each page.
+
+o Structured headings and descriptive content for better search engine indexing.
+
+o Product Grid Layout
+
+o Products are displayed in a grid format with images, names, prices, and toggle sections.
+
+o Provides a clean and organized visual structure.
+
+nspiration
+Furniture company websites:
+o	Cielo: https://www.cielo.co.za/?srsltid=AfmBOoo7up0yCPbKOFY3dH7H_hav-2H6D2sIVr0yHzkEFZxOXEC9ftEF
+o	Homzy: https://homzy.co.za/?srsltid=AfmBOorNpip3xRQrOTM1EbKAtAkcGtwYZzlo7qZGcs6RlXAg_-qyp_32
+
+Technical resources
+HTML, CSS
+o	Visual Studio Code: https://code.visualstudio.com/ 
+o	W3Schools: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit 
+o	GitHub Repositories: OratileLesabe-lab/orbitfurniture: The website project is for a furniture 
+
+Author
+Oratile Lesabe- Diploma in Network Management Student.
