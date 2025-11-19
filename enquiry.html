@@ -43,13 +43,13 @@
         <input type="number" id="qty" name="qty" min="1" required>
 
         <button type="submit">Submit Enquiry</button>
+          <span class="error" id="productError"></span>
     </form>
 <div id="result"></div>
 </div>
 
-<script>footer>
-        <p>&copy; 2024 Orbit Furniture</p>
-    </footer>
+<script src="enquiry.js"></script>
+<script>
 document.getElementById("enquiryForm").addEventListener("submit", function(event) {
     event.preventDefault();
     const name = document.getElementById("name").value;
