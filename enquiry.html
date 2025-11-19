@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+        <title>Orbit Furniture | Affordable Modern Furniture in South Africa</title>
+<meta name="description" content="Orbit Furniture offers high-quality daybeds, slaybeds, pedestals and headboards at affordable prices. Shop stylish and durable furniture for every home.">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+    <h2>Product Enquiry Form</h2>
+    <form id="enquiryForm">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="product">Select Product:</label>
+        <select id="product" name="product" required>
+            <option value="">-- Choose a Product --</option>
+            <option value="Sofa">Pedestal – R4500</option>
+            <option value="Dining Table">Headboard – R3800</option>
+            <option value="TV Stand">Slaybed – R2500</option>
+            <option value="Bed">Bed – R5200</option>
+        </select>
+
+        <label for="qty">Quantity:</label>
+        <input type="number" id="qty" name="qty" min="1" required>
+
+        <button type="submit">Submit Enquiry</button>
+    </form>
+<div id="result"></div>
+</div>
+
+<script>
+document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const product = document.getElementById("product").value;
+    const qty = parseInt(document.getElementById("qty").value);
+    const prices = {
+        "Pedestal": 4500,
+        "Headboard": 3800,
+        "Slaybed": 2500,
+        "Bed": 5200
+        const total = prices[product] * qty;
+
+        const delivery = total > 5000 ? "Free Delivery" : "Delivery Fee: R250";
+
+        const resultBox = document.getElementById("result");
+    resultBox.style.display = "block";
+    resultBox.innerHTML = `
+        <h3>Enquiry Summary</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Product:</strong> ${product}</p>
+        <p><strong>Quantity:</strong> ${qty}</p>
+        <p><strong>Total Cost:</strong> R${total}</p>
+        <p><strong>Delivery Info:</strong> ${delivery}</p>
+        <p>We will contact you shortly.</p>
+    `;
+});
+</script>
+    </body>
+</html>
