@@ -753,3 +753,58 @@ h1 {
     border: 1px solid #ccc;
     font-size: 15px;
 }
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container for form */
+.container {
+    background: #fff;
+    padding: 25px;
+    width: 450px;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+}
+
+/* Input and select fields */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Submit button */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Response box */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e9ffe9;
+    border: 1px solid #8de98d;
+    display: none;
+}
