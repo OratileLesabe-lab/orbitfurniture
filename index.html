@@ -51,6 +51,50 @@ document.getElementById("closeAd").addEventListener("click", () => {
     document.getElementById("adBanner").classList.remove("show");
 });
 </script>
+<section class="gallery">
+  <h2>Furniture Gallery</h2>
+  <div class="gallery-grid">
+    <img src="img/Product1.jpg" alt="Luxury Slaybed" class="gallery-item">
+    <img src="img/Product2.jpg" alt="Classic Pedestal" class="gallery-item">
+    <img src="img/Product3.jpg" alt="Modern Headboard" class="gallery-item">
+    <img src="img/comfort-daybed.jpg" alt="ComfortDaybed" class="gallery-item">
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" alt="">
+  <p id="lightbox-caption"></p>
+</div>
+<script>
+    // Lightbox functionality
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const captionText = document.getElementById("lightbox-caption");
+const closeBtn = document.querySelector(".close-lightbox");
+
+document.querySelectorAll(".gallery-item").forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.style.display = "block";
+    lightboxImg.src = img.src;
+    captionText.textContent = img.alt;
+  });
+});
+
+// Close lightbox
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+// Close lightbox if user clicks outside the image
+lightbox.addEventListener("click", (e) => {
+  if(e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
+
+</script>
         <p>
   Browse our full range in the <a href="our-products.html">Our Products</a> page.
 </p>
