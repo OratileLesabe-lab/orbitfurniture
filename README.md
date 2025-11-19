@@ -196,9 +196,16 @@ orbit-furniture/
         ├── slaybed.jpg
         ├── pedestal.jpg
         └── headboard.jpg
-        └── headboard.jpg
-        └── headboard.jpg
-        └── headboard.jpg
+        └── slaybed.jpg
+        └── comfort-daybed.jpg
+        └── classic pedestals.jpg
+        └── modern-headboards.jpg
+        └── showroom.jpg
+        └── team-member1.jpg
+        └── team-member2.jpg
+        └── facebooklogo.jpg
+        └── instalogo.jpg
+
 
 Orbit Furniture is an interactive and user-friendly website that displays a wide range of furniture items, such as daybeds, slaybeds, headboards, and pedestals. The site aims to deliver an engaging experience for users through dynamic product listings, functionalities for searching and sorting, modals for special promotions, and interactive tabs for different product categories.
 
@@ -288,6 +295,14 @@ o Products are displayed in a grid format with images, names, prices, and toggle
 
 o Provides a clean and organized visual structure.
 
+o Modals: Added pop-up modals for special offers on the Our Products page.
+
+o Tabs: Furniture categories are displayed using tabs (Pedestals, Headboards, Slaybeds).
+
+o Toggle Buttons: Each product has a “Learn More” button to expand/collapse detailed descriptions.
+
+o Lightbox Gallery: Product images can be viewed in a larger modal when clicked.
+
 nspiration
 Furniture company websites:
 o	Cielo: https://www.cielo.co.za/?srsltid=AfmBOoo7up0yCPbKOFY3dH7H_hav-2H6D2sIVr0yHzkEFZxOXEC9ftEF
@@ -297,6 +312,7 @@ Technical resources
 HTML, CSS
 o	Visual Studio Code: https://code.visualstudio.com/ 
 o	W3Schools: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit 
+ohttps://mystudies.iie.edu.za/d2l/le/lessons/25599/topics/3544830
 o	GitHub Repositories: OratileLesabe-lab/orbitfurniture: The website project is for a furniture 
 
 Author
