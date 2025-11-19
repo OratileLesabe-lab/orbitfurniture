@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://https://file:///C:/Users/Oratile%20Lesabe/Documents/GitHub/orbitfurniture/index.html/sitemap.xml
